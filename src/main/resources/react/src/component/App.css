@@ -1,0 +1,135 @@
+.App {
+  text-align: center;
+}
+
+.nav-items {
+  list-style: none;
+  margin: 0 auto;
+}
+
+.nav-item {
+  display: inline-block;
+  height: 80px;
+  padding: 0 10px;
+  text-align: center;
+  min-width: 80px;
+  margin: 0 10px;
+  line-height: 80px;
+}
+
+.nav-item > a {
+  font-size: x-small;
+  text-decoration: none;
+  color: darkgray;
+}
+
+#logo {
+  font-size: large;
+  color: black;
+  margin-right: 100px;
+}
+
+.main {
+  top: 80px;
+  width: 100%;
+  height: 100%;
+}
+
+.seccion_main {
+  width: 100%;
+}
+
+.section_left, .section_right {
+  display: inline-block;
+  width: 50%;
+  height: 720px;
+}
+
+.intro_main {
+  position: relative;
+}
+
+.title_main {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  font-weight: bold;
+  font-size: 49px;
+  line-height: 1.4;
+  color: black;
+  text-align: left;
+}
+
+.title_sub1 {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  font-size: 17px;
+  line-height: 1.95;
+  color: black;
+  opacity: .7;
+  text-align: left;
+}
+
+.title_sub2 {
+  position: absolute;
+  top: 45%;
+  left: 10%;
+  font-size: 17px;
+  line-height: 1.95;
+  color: black;
+  opacity: .7;
+  text-align: left;
+}
+.mainBox {
+  width: 100%;
+}
+.imgBox {
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.textBox {
+  text-align: left;
+  padding-left: 50px;
+  padding-right: 20px; 
+}
+
+.L-text {
+  display: block;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.S-text {
+  display: block;
+  padding-top: 30px;
+  font-size: x-small;
+  color: darkgrey;
+}
+
+.componentBox {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.Hover:hover {
+  background-color: midnightblue;
+  color: aliceblue;
+}
+
+.carousel {
+  width: 280px;
+  height: 441px;
+  margin: 0 auto;
+}
+
+.bar {
+  width: 100%;
+  height: 30px;
+  background-color: ghostwhite;
+}

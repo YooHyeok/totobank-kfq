@@ -1,6 +1,5 @@
 import {Component} from 'react';
-import {Form, Label, Input, Button, Col, FormGroup
-        , Modal, ModalHeader, ModalBody, ModalFooter, Table} from 'reactstrap';
+import {Table} from 'reactstrap';
 import axios from 'axios';
 class AllAccount extends Component {
     constructor(props) {

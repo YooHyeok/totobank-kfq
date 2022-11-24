@@ -8,6 +8,7 @@ import AccountInfo from './AccountInfo';
 import Deposit from './Deposit';
 import Withdraw from './Withdraw';
 import Transfor from './Transfor';
+import AllAccount from './AllAccount';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route exact path='/deposit' element={<Deposit/>}/>
         <Route exact path='/withdraw' element={<Withdraw/>}/>
         <Route exact path='/transfor' element={<Transfor/>}/>
+        <Route exact path='/allaccount' element={<AllAccount/>}/>
       </Routes>
     </div>
   );

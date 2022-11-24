@@ -1,7 +1,7 @@
 package com.example.bank.service;
 
-import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
@@ -135,4 +135,10 @@ public class AccountService {
 		// 수금계좌에서 money만큼 입금
 		return sacc.getBalance();
 	}
+	
+	public List<Account> allAccount() throws Exception {
+		List<Account> accs = accountRepository.findAll();
+		return accs;
+	}
+	
 }

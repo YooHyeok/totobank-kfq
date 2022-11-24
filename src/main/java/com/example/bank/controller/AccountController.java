@@ -1,10 +1,12 @@
 package com.example.bank.controller;
 
+import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -22,7 +24,6 @@ public class AccountController extends BaseController{
 	@PostMapping("/makeaccount")
 	public ResponseEntity<String> makeAccount(Account acc) {
 		ResponseEntity<String> res = null;
-		System.out.println(acc);
 		try {
 			accountService.makeAccount(acc);
 			res = new ResponseEntity<String>("success", HttpStatus.OK);
@@ -115,5 +116,19 @@ public class AccountController extends BaseController{
 			res = new ResponseEntity<Integer>(-1, HttpStatus.BAD_REQUEST);
 		}
 		return res;
-	} 
+	}
+	
+	@GetMapping("/all")
+	public ResponseEntity<List<Account>> allAccount() {
+		ResponseEntity<List<Account>> res = null;
+		List<Account> accs = null;
+		try {
+			accs = accountService.allAccount();
+			res = new ResponseEntity<List<Account>>(accs, HttpStatus.OK);
+		} catch (Exception e) {
+			e.printStackTrace();
+			res = new ResponseEntity<List<Account>>(accs, HttpStatus.BAD_REQUEST);
+		}
+		return res;
+	}
 }
